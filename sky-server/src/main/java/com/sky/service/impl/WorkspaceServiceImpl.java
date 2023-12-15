@@ -92,7 +92,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
      */
     public OrderOverViewVO getOrderOverView() {
         Map map = new HashMap();
-        map.put("begin", LocalDateTime.now().with(LocalTime.MIN));
+        map.put("begin", LocalDateTime.now().with(LocalTime.MIN));//当天最小时间
         map.put("status", Orders.TO_BE_CONFIRMED);
 
         //待接单
